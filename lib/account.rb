@@ -1,7 +1,12 @@
 # frozen_string_literal: true
 
 class Account
-  def balance
-    '£0.00'
+
+  attr_reader :balance
+
+  def initialize
+  @balance = 0
   end
+
+  
 end

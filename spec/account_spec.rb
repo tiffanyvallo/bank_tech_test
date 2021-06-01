@@ -9,7 +9,7 @@ describe Account do
       expect(subject).to respond_to(:balance)
     end
     it 'can show a starting balance of £0.00' do
-      expect(subject.balance).to eq('£0.00')
+      expect(subject.balance).to eq(0)
     end
   end
 end
