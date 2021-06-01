@@ -30,5 +30,8 @@ describe Account do
       subject.withdraw(500)
       expect(subject.balance).to eq(500)
     end
+    it "can notify client if withdrawal is more than balance" do
+      expect { subject.withdraw(2000) }.to raise_error("Insufficient Funds: Unable to withdraw")
+    end
   end
 end
