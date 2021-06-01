@@ -57,6 +57,11 @@ As a client
 So that I am not taking out the correct amount
 I would like to be notified if I try to withdraw an amount less than £0
 ```
+```
+As a client
+So that I am depositing the correct amount 
+I would like to be notified if I try to deposit an amount less than £0
+```
 ### How to use
 
 ### How to run tests

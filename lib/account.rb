@@ -8,11 +8,12 @@ class Account
   end
 
   def deposit(amount)
+    raise "Unable to deposit: Amount entered is less than £0" if amount < 0
     @balance += amount
   end
 
   def withdraw(amount)
-    raise "Insufficient Funds: Unable to withdraw" if amount > @balance
+    raise "Unable to withdraw: Insufficient Funds" if amount > @balance
     raise "Unable to withdraw: Amount entered is less than £0" if amount < 0
     @balance -= amount
   end

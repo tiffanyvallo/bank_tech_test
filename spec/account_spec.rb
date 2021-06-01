@@ -19,6 +19,9 @@ describe Account do
       subject.deposit(1000)
       expect(subject.balance).to eq(1000)
     end
+    it "can notify client if deposit is less than £0" do
+      expect { subject.deposit(-500) }.to raise_error("Unable to deposit: Amount entered is less than £0")
+    end
   end
 
   context 'withdraw' do
@@ -31,7 +34,7 @@ describe Account do
       expect(subject.balance).to eq(500)
     end
     it "can notify client if withdrawal is more than balance" do
-      expect { subject.withdraw(2000) }.to raise_error("Insufficient Funds: Unable to withdraw")
+      expect { subject.withdraw(2000) }.to raise_error("Unable to withdraw: Insufficient Funds")
     end
     it "can notify client if withdrawal is less than £0" do
       expect { subject.withdraw(-500) }.to raise_error("Unable to withdraw: Amount entered is less than £0")
