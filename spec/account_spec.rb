@@ -22,9 +22,11 @@ describe Account do
   end
 
   context 'withdraw' do
+    before do 
+      subject.deposit(1000)
+    end
     it { expect(subject).to respond_to(:withdraw).with(1).argument }
     it 'allows a withdrawal of £500 to be made' do
-      subject.deposit(1000)
       subject.withdraw(500)
       expect(subject.balance).to eq(500)
     end
