@@ -23,6 +23,11 @@ date       || credit  || withdrawal || balance
 ### User Stories
 ```
 As a client
+So that I can be smart with my money
+I would like to open a bank account with default balance of £0.00
+```
+```
+As a client
 So that I can store money in my account
 I would like to be able to make a deposit
 ```
