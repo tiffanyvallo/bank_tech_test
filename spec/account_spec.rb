@@ -20,4 +20,8 @@ describe Account do
       expect(subject.balance).to eq(1000)
     end
   end
+
+  context 'withdraw' do
+    it { expect(subject).to respond_to(:withdraw).with(1).argument }
+  end
 end
