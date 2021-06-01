@@ -11,6 +11,14 @@ describe Account do
     it 'can show a starting balance of £0.00' do
       expect(subject.balance).to eq(0)
     end
+    it 'can show a balance when money is deposited and withdrawn' do
+      subject.deposit(10000)
+      subject.withdraw(800)
+      subject.deposit(700)
+      subject.withdraw(840)
+      subject.withdraw(2107)
+      expect(subject.balance).to eq(6953)
+    end
   end
 
   context 'deposit' do
