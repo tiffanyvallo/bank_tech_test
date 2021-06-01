@@ -44,7 +44,7 @@ I would like to be able to print a dated bank statement of my transactions
 #### Edge Cases
 ```
 As a client
-So that I am not withdrawing over my balance
+So that I am not taking out more money than I have
 I would like to be notified if I withdraw over my balance
 ```
 ### How to use
