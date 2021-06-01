@@ -15,5 +15,9 @@ describe Account do
 
   context 'deposit' do
     it { expect(subject).to respond_to(:deposit).with(1).argument }
+    it 'allows a deposit of £1000 to be made' do
+      subject.deposit(1000)
+      expect(subject.balance).to eq(1000)
+    end
   end
 end
