@@ -52,6 +52,11 @@ As a client
 So that I am not taking out more money than I have
 I would like to be notified if I withdraw over my balance
 ```
+```
+As a client
+So that I am not taking out the correct amount
+I would like to be notified if I try to withdraw an amount less than £0
+```
 ### How to use
 
 ### How to run tests
