@@ -18,5 +18,4 @@ describe Transactions do
       expect(subject.date).to eq(Date.today)
     end
   end
-  
 end
