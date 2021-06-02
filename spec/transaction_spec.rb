@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require 'transactions'
+require 'transaction'
 require 'date'
 
-describe Transactions do
+describe Transaction do
   context 'account creation' do
     it 'has a default balance of £0' do
       expect(subject.current_balance).to eq(0)
