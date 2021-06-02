@@ -51,7 +51,7 @@ describe Account do
 
   context 'transactions' do
     it 'starts with no transactions' do
-     expect(subject.history).to be_empty
+      expect(subject.history).to be_empty
     end
   end
 end
