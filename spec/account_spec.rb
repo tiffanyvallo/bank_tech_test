@@ -48,4 +48,10 @@ describe Account do
       expect { subject.withdraw(-500) }.to raise_error('Unable to withdraw: Amount entered is less than £0')
     end
   end
+
+  context 'transactions' do
+    it 'starts with no transactions' do
+     expect(subject.history).to be_empty
+    end
+  end
 end
