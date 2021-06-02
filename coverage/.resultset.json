@@ -87,6 +87,8 @@
           1,
           null,
           1,
+          1,
+          1,
           null,
           null
         ]
@@ -98,10 +100,15 @@
           null,
           1,
           null,
+          null,
+          1,
+          1,
+          null,
+          null,
           null
         ]
       },
-      "/Users/tiffanyvallo/Makers/Projects/bank_tech_test/lib/transactions.rb": {
+      "/Users/tiffanyvallo/Makers/Projects/bank_tech_test/lib/transaction.rb": {
         "lines": [
           null,
           null,
@@ -119,7 +126,7 @@
           null
         ]
       },
-      "/Users/tiffanyvallo/Makers/Projects/bank_tech_test/spec/transactions_spec.rb": {
+      "/Users/tiffanyvallo/Makers/Projects/bank_tech_test/spec/transaction_spec.rb": {
         "lines": [
           null,
           null,
@@ -145,6 +152,6 @@
         ]
       }
     },
-    "timestamp": 1622627822
+    "timestamp": 1622630371
   }
 }
