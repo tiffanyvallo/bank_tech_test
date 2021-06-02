@@ -2,6 +2,13 @@
 
 require 'account'
 describe Account do
+  let(:account) do
+    described_class.new(transactions, statement)
+  end
+  let(:transactions) { double(:transactions, new: transaction) }
+  let(:statement) { double(:statement) }
+  let(:transaction) { double(:transaction) }
+
   it { is_expected.to be_an_instance_of Account }
 
   context 'starting an account' do
@@ -9,7 +16,7 @@ describe Account do
       expect(subject).to respond_to(:balance)
     end
     it 'can show a starting balance of £0.00' do
-      expect(subject.balance).to eq(0)
+      expect(subject.balance).to eq(Account::MINIMUM_BALANCE)
     end
     it 'can show a balance when money is deposited and withdrawn' do
       subject.deposit(10_000)
@@ -54,11 +61,11 @@ describe Account do
       expect(subject.history).to be_empty
     end
   end
+
   context 'view statement' do
-    let(:statement) { double :statement }
     it 'can print the statement of transactions' do
-      allow(statement).to receive(:print)
-      subject.view_statement
+      expect(statement).to receive(:print)
+      account.view_statement
     end
   end
 end

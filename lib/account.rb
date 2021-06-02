@@ -6,8 +6,10 @@ require_relative 'print_statement'
 class Account
   attr_reader :balance, :history
 
+  MINIMUM_BALANCE = 0
+
   def initialize(transaction = Transaction, statement = PrintStatement.new)
-    @balance = 0
+    @balance = MINIMUM_BALANCE
     @history = []
     @transaction = transaction
     @statement = statement
