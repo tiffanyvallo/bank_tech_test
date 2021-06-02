@@ -84,6 +84,8 @@
       },
       "/Users/tiffanyvallo/Makers/Projects/bank_tech_test/spec/print_statement_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -110,8 +112,6 @@
       },
       "/Users/tiffanyvallo/Makers/Projects/bank_tech_test/lib/transaction.rb": {
         "lines": [
-          null,
-          null,
           1,
           null,
           1,
@@ -152,6 +152,6 @@
         ]
       }
     },
-    "timestamp": 1622630371
+    "timestamp": 1622641356
   }
 }
