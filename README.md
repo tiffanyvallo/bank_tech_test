@@ -1,6 +1,6 @@
 ## Bank Tech Test
 
-![bank_tech_test_demo](./public/images/demo_bank.gif)
+![bank_tech_test_demo](./public/images/demo_bank_test.gif)
 ### Requirements
 You should be able to interact with your code via a REPL like IRB or the JavaScript console.
 Deposits, withdrawal.
