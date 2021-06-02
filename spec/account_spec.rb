@@ -54,4 +54,11 @@ describe Account do
       expect(subject.history).to be_empty
     end
   end
+  context 'view statement' do
+    let(:statement) { double :statement }
+    it 'can print the statement of transactions' do
+      allow(statement).to receive(:print)
+      subject.view_statement
+    end
+  end
 end

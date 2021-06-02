@@ -1,14 +1,16 @@
 # frozen_string_literal: true
 
 require_relative 'transaction'
+require_relative 'print_statement'
 
 class Account
   attr_reader :balance, :history
 
-  def initialize(transaction = Transaction)
+  def initialize(transaction = Transaction, statement = PrintStatement.new)
     @balance = 0
     @history = []
     @transaction = transaction
+    @statement = statement
   end
 
   def deposit(amount)
@@ -24,6 +26,10 @@ class Account
 
     @balance -= amount
     save_transaction(transaction_debit(amount))
+  end
+
+  def view_statement
+    @statement.print(@history)
   end
 
   private
