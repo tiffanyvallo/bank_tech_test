@@ -63,12 +63,15 @@ So that I am depositing the correct amount
 I would like to be notified if I try to deposit an amount less than £0
 ```
 ### How to use
-
+- Clone this repo and navigate to the project directory. 
+- Run `bundle install` 
+- 
 ### How to run tests
 
 ### Code Dependecies
 
 ### Screenshots
 
-### Reflection
+### Approach
+
 
