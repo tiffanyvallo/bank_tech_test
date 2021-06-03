@@ -29,6 +29,7 @@ date       || credit  || debit  || balance
 <br>
 <img src="/public/images/domain_models_bank.png">
 </details>
+
 - The `Account` class is where all client interaction happens, the client is able to withdraw, deposit and view their bank statemnt from here. 
 - The `Transaction` class creates the credit and debit transactions
 - The `PrintStatement` class creates and formats the statement using the information provided by the other 2 classes.
