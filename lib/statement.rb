@@ -3,7 +3,7 @@
 require_relative 'transaction'
 require_relative 'account'
 
-class PrintStatement
+class Statement
   def print(history)
     @history = history
     footer = @history.reverse.map do |transaction|

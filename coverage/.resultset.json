@@ -148,7 +148,7 @@
           null
         ]
       },
-      "/Users/tiffanyvallo/Makers/Projects/bank_tech_test/lib/print_statement.rb": {
+      "/Users/tiffanyvallo/Makers/Projects/bank_tech_test/lib/statement.rb": {
         "lines": [
           null,
           null,
@@ -173,7 +173,7 @@
           null
         ]
       },
-      "/Users/tiffanyvallo/Makers/Projects/bank_tech_test/spec/print_statement_spec.rb": {
+      "/Users/tiffanyvallo/Makers/Projects/bank_tech_test/spec/statement_spec.rb": {
         "lines": [
           null,
           null,
@@ -219,6 +219,6 @@
         ]
       }
     },
-    "timestamp": 1622674386
+    "timestamp": 1622927896
   }
 }

@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'print_statement'
+require 'statement'
 
-describe PrintStatement do
+describe Statement do
   let(:history) { [transaction1, transaction2] }
   let(:transaction1) { double(:transaction1, date: Date.today, credit: 10_000, debit: 0, current_balance: 10_000) }
   let(:transaction2) { double(:transaction2, date: Date.today, credit: 0, debit: 5000, current_balance: 5000) }

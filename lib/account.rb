@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
 require_relative 'transaction'
-require_relative 'print_statement'
+require_relative 'statement'
 
 class Account
   attr_reader :balance, :history
 
   MINIMUM_BALANCE = 0
 
-  def initialize(transaction = Transaction, statement = PrintStatement.new)
+  def initialize(transaction = Transaction, statement = Statement.new)
     @balance = MINIMUM_BALANCE
     @history = []
     @transaction = transaction
